@@ -1,9 +1,9 @@
 class C66starter < Formula
   desc "Cloud 66 Starter Brew"
   homepage "http://www.cloud66.com"
-  url "https://github.com/cloud66/c66starter/archive/1.0.1.tar.gz"
-  version "1.0.1"
-  sha256 "cb979db1e5f3e886d4dc2489ad23a4dddf265619138780ee0b84f7665047070c"
+  url "https://github.com/cloud66/c66starter/archive/1.0.2.tar.gz"
+  version "1.0.2"
+  sha256 "8fcc70bdfe472f9ef1d367e3e4928a7cb4d379c6563fb43fd6a3fedf6df344e2"
 
   def install
     bin.install "starter"
