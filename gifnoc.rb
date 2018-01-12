@@ -3,9 +3,9 @@
 class Gifnoc < Formula
   desc "Gifnoc, the cloud friendly configuration and security manager"
   homepage "http://www.gifnoc.com"
-  version "0.0.1"
-  url "https://s3.amazonaws.com/downloads.cloud66.com/gifnoc/0.0.1/gifnoc_0.0.1.tar"
-  sha256 "be9521c4f09afca7f5365ac7f669fe95770ca8005b9cd17f680f449fd88451b6"
+  version "0.0.2"
+  url "https://s3.amazonaws.com/downloads.cloud66.com/gifnoc/0.0.2/gifnoc_0.0.2.tar"
+  sha256 "d377ebffdaafe9a4dccbb19163672882afbc088fdaad55b6a96afebff3739fbe"
 
   option "token=", "Your gifnoc's hosted name token (ie cloud66)"
 
@@ -17,7 +17,7 @@ class Gifnoc < Formula
     ARGV.value("token") || default_agent_token
   end
 
-  plist_options :manual => "gifnoc start --runas proxy --upstream https://cloud66.gifnoc.com --port 9820 --binding 127.0.0.1 --ignore-cert-errors --offline"
+  plist_options :manual => "gifnoc start --runas proxy --upstream https://cloud66.gifnoc.com --port 9820 --binding 127.0.0.1 --ignore-cert-errors"
 
   def plist
     <<-EOS.undent
@@ -42,7 +42,6 @@ class Gifnoc < Formula
           <string>--binding</string>
           <string>127.0.0.1</string>
           <string>--ignore-cert-errors</string>
-          <string>--offline</string>
         </array>
         <key>EnvironmentVariables</key>
         <dict>
