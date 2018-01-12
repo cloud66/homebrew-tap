@@ -6,6 +6,7 @@ class Gifnoc < Formula
   version "0.0.2"
   url "https://s3.amazonaws.com/downloads.cloud66.com/gifnoc/0.0.2/gifnoc_0.0.2.tar"
   sha256 "d377ebffdaafe9a4dccbb19163672882afbc088fdaad55b6a96afebff3739fbe"
+  # to calculate: curl -s https://s3.amazonaws.com/downloads.cloud66.com/gifnoc/0.0.2/gifnoc_0.0.2.tar | shasum -a 256
 
   option "token=", "Your gifnoc's hosted name token (ie cloud66)"
 
