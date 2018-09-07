@@ -3,7 +3,7 @@
 class Gifnoc < Formula
   desc "Gifnoc, the cloud friendly configuration and security manager"
   homepage "http://www.gifnoc.com"
-  version "0.0.3"
+  version "0.0.4"
   url "https://s3.amazonaws.com/downloads.cloud66.com/gifnoc/0.0.4/gifnoc_0.0.4.tar"
   sha256 "302d62f6d8f66264e8b92779cd877a4f924fa95aea5fde541aec1da6431979fe"
   # to calculate: curl -s https://s3.amazonaws.com/downloads.cloud66.com/gifnoc/0.0.2/gifnoc_0.0.2.tar | shasum -a 256
